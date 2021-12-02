@@ -1,0 +1,9 @@
+{
+	"name": "adflakshmi1",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a2f2fc13-6c1e-4b07-8daa-9c8792a0a874",
+		"tenantId": "0cb43dd6-0d60-4581-8725-e1c268d5fe3d"
+	}
+}
