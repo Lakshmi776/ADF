@@ -15,8 +15,197 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"enableStaging": false
-				}
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Prop_0",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Prop_0",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "credit.policy",
+									"type": "String"
+								},
+								"sink": {
+									"name": "credit.policy",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "purpose",
+									"type": "String"
+								},
+								"sink": {
+									"name": "purpose",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "int.rate",
+									"type": "String"
+								},
+								"sink": {
+									"name": "int.rate",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "installment",
+									"type": "String"
+								},
+								"sink": {
+									"name": "installment",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "log.annual.inc",
+									"type": "String"
+								},
+								"sink": {
+									"name": "log.annual.inc",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "dti",
+									"type": "String"
+								},
+								"sink": {
+									"name": "dti",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "fico",
+									"type": "String"
+								},
+								"sink": {
+									"name": "fico",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "days.with.cr.line",
+									"type": "String"
+								},
+								"sink": {
+									"name": "days.with.cr.line",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "revol.bal",
+									"type": "String"
+								},
+								"sink": {
+									"name": "revol.bal",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "revol.util",
+									"type": "String"
+								},
+								"sink": {
+									"name": "revol.util",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "inq.last.6mths",
+									"type": "String"
+								},
+								"sink": {
+									"name": "inq.last.6mths",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "delinq.2yrs",
+									"type": "String"
+								},
+								"sink": {
+									"name": "delinq.2yrs",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "pub.rec",
+									"type": "String"
+								},
+								"sink": {
+									"name": "pub.rec",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "not.fully.paid",
+									"type": "String"
+								},
+								"sink": {
+									"name": "not.fully.paid",
+									"type": "String"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "Inputcsvfile",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Outputcsvfile",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
