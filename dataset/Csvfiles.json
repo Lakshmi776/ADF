@@ -1,5 +1,5 @@
 {
-	"name": "Inputcsvfile",
+	"name": "Csvfiles",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
@@ -15,68 +15,52 @@
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
-			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": [
 			{
-				"name": "Prop_0",
 				"type": "String"
 			},
 			{
-				"name": "credit.policy",
 				"type": "String"
 			},
 			{
-				"name": "purpose",
 				"type": "String"
 			},
 			{
-				"name": "int.rate",
 				"type": "String"
 			},
 			{
-				"name": "installment",
 				"type": "String"
 			},
 			{
-				"name": "log.annual.inc",
 				"type": "String"
 			},
 			{
-				"name": "dti",
 				"type": "String"
 			},
 			{
-				"name": "fico",
 				"type": "String"
 			},
 			{
-				"name": "days.with.cr.line",
 				"type": "String"
 			},
 			{
-				"name": "revol.bal",
 				"type": "String"
 			},
 			{
-				"name": "revol.util",
 				"type": "String"
 			},
 			{
-				"name": "inq.last.6mths",
 				"type": "String"
 			},
 			{
-				"name": "delinq.2yrs",
 				"type": "String"
 			},
 			{
-				"name": "pub.rec",
 				"type": "String"
 			},
 			{
-				"name": "not.fully.paid",
 				"type": "String"
 			}
 		]
