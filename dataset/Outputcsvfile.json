@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "out_csv",
 				"folderPath": "Output",
 				"container": "container1lakshmi"
 			},
